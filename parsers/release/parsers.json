@@ -1,5 +1,5 @@
 {
-  "parsers_version": 7,
+  "parsers_version": 8,
   "parsers_configurations": [
     {
       "parser_name": "aws_cloudtrail",
@@ -84,14 +84,15 @@
     },
     {
       "parser_name": "siembol_heartbeat",
-      "parser_version": 2,
+      "parser_version": 3,
       "parser_author": "siembol",
-      "parser_description": "Parser for siembol heartbeat",
+      "parser_description": "Parser for siembol heartbeat.!",
       "parser_attributes": {
         "parser_type": "generic"
       },
       "parser_extractors": [
         {
+          "is_enabled": true,
           "name": "json",
           "field": "original_string",
           "post_processing_functions": [
