@@ -1,5 +1,5 @@
 {
-  "config_version": 4,
+  "config_version": 5,
   "topology.name": "siembol-enrichment",
   "kafka.spout.num.executors": 1,
   "enriching.engine.bolt.num.executors": 1,
@@ -44,5 +44,5 @@
   ],
   "enriching.output.topic": "siembol.indexing",
   "enriching.error.topic": "siembol.indexing",
-  "enriching.tables.uri": "http://enrichment-store"
+  "enriching.tables.uri": "http://enrichment-store:8080"
 }
