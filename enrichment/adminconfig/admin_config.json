@@ -1,5 +1,5 @@
 {
-  "config_version": 3,
+  "config_version": 4,
   "topology.name": "siembol-enrichment",
   "kafka.spout.num.executors": 1,
   "enriching.engine.bolt.num.executors": 1,
@@ -19,7 +19,6 @@
     "zk.url": "siembol-zookeeper:2181"
   },
   "kafka.batch.writer.attributes": {
-    "batch.size": 1,
     "producer.properties": {
       "bootstrap.servers": "kafka-0.kafka-headless.siembol.svc.cluster.local:9092",
       "client.id": "siembol.enrichment.writer",
@@ -45,5 +44,5 @@
   ],
   "enriching.output.topic": "siembol.indexing",
   "enriching.error.topic": "siembol.indexing",
-  "enriching.tables.uri": "http://siembol-enrichment-store"
+  "enriching.tables.uri": "http://enrichment-store"
 }
