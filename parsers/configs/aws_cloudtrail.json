@@ -1,13 +1,14 @@
 {
   "parser_name": "aws_cloudtrail",
-  "parser_version": 4,
+  "parser_version": 5,
   "parser_author": "siembol",
-  "parser_description": "AWS cloudtrail parser!",
+  "parser_description": "AWS cloudtrail parser",
   "parser_attributes": {
     "parser_type": "generic"
   },
   "parser_extractors": [
     {
+      "is_enabled": true,
       "name": "json",
       "field": "original_string",
       "post_processing_functions": [
@@ -33,6 +34,7 @@
   ],
   "transformations": [
     {
+      "is_enabled": true,
       "transformation_type": "delete_fields",
       "attributes": {
         "fields_filter": {
